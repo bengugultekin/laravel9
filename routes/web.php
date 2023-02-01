@@ -27,3 +27,10 @@ Route::prefix('admin')->group(function(){
     Route::get('/test', [TestController::class, 'test'])->name('test');
     Route::get('/detail', [TestController::class, 'detail'])->name('detail');
 });
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
